@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0D1117">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ayarlar"
+            android:textColor="#F0B90B"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"/>
+        <Switch
+            android:id="@+id/swTestnet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TestNet (Demo)"
+            android:textColor="#E6EDF3"
+            android:textSize="16sp"
+            android:paddingBottom="16dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="API Key" android:textColor="#8B949E" android:textSize="12sp"/>
+        <EditText
+            android:id="@+id/etApiKey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_bg"
+            android:padding="12dp"
+            android:textColor="#E6EDF3"
+            android:inputType="text"
+            android:layout_marginBottom="12dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="API Secret" android:textColor="#8B949E" android:textSize="12sp"/>
+        <EditText
+            android:id="@+id/etApiSecret"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_bg"
+            android:padding="12dp"
+            android:textColor="#E6EDF3"
+            android:inputType="textPassword"
+            android:layout_marginBottom="12dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Kaldıraç (1-20)" android:textColor="#8B949E" android:textSize="12sp"/>
+        <EditText
+            android:id="@+id/etLeverage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_bg"
+            android:padding="12dp"
+            android:textColor="#E6EDF3"
+            android:inputType="number"
+            android:layout_marginBottom="12dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="İşlem Başına USDT" android:textColor="#8B949E" android:textSize="12sp"/>
+        <EditText
+            android:id="@+id/etTradeUsdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_bg"
+            android:padding="12dp"
+            android:textColor="#E6EDF3"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="20dp"/>
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kaydet"
+            android:backgroundTint="#F0B90B"
+            android:textColor="#0D1117"
+            android:textStyle="bold"/>
+    </LinearLayout>
+</ScrollView>
